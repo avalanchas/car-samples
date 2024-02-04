@@ -17,12 +17,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdk 32
+    compileSdk rootProject.ext.compileSdkVersion
 
     defaultConfig {
         applicationId "androidx.car.app.sample.helloworld"
-        minSdkVersion 29
-        targetSdkVersion 32
+        minSdkVersion rootProject.ext.minSdkVersionAutomotive
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
     }
@@ -45,6 +45,6 @@ android {
 }
 
 dependencies {
-    implementation "androidx.car.app:app-automotive:1.2.0-rc01"
+    implementation "androidx.car.app:app-automotive:$androidxCarVersion"
     implementation project(":helloworld:common")
 }

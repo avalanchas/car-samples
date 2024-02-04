@@ -17,12 +17,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdk 33
+    compileSdk rootProject.ext.compileSdkVersion
 
     defaultConfig {
         applicationId "androidx.car.app.sample.navigation"
-        minSdkVersion 29
-        targetSdkVersion 33
+        minSdkVersion rootProject.ext.minSdkVersionAutomotive
+        targetSdkVersion rootProject.ext.targetSdkVersion
         // Increment this to generate signed builds for uploading to Playstore
         // Make sure this is different from the navigation-mobile version
         versionCode 113
@@ -47,6 +47,6 @@ android {
 }
 
 dependencies {
-    implementation "androidx.car.app:app-automotive:1.3.0-beta01"
+    implementation "androidx.car.app:app-automotive:$androidxCarVersion"
     implementation project(":navigation:common")
 }

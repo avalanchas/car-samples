@@ -1,0 +1,8 @@
+ext {
+    compileSdkVersion = 34
+    minSdkVersionAuto = 23
+    minSdkVersionAutomotive = 29
+    targetSdkVersion = 34
+
+    androidxCarVersion = '1.4.0-rc02'
+}

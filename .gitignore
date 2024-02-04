@@ -34,3 +34,6 @@ proguard-project.txt
 # Android Studio/IDEA
 *.iml
 .idea
+car_app_library/gradle/wrapper/gradle-wrapper.jar
+car_app_library/gradlew
+car_app_library/gradlew.bat
